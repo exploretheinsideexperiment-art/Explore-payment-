@@ -1,0 +1,7 @@
+{
+  "name": "Explore Payment",
+  "description": "Production-ready creator monetization and pay-to-access platform with UPI QR, automated payment verification, and secure pay-to-unlock engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
