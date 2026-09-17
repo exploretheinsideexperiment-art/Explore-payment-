@@ -9,22 +9,15 @@
     <meta property="og:description" content="Production-ready creator monetization and pay-to-access platform with UPI QR, automated payment verification, and secure pay-to-unlock engine." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/assets/index.css" id="static-css">
+    <script type="module" crossorigin src="./assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index.css">
   </head>
   <body>
     <div id="root"></div>
-    <script type="module">
-      const isLocalDev = location.port === '3000' || location.hostname === 'localhost' || location.hostname.includes('run.app');
-      if (isLocalDev) {
-        import('/src/main.tsx');
-      } else {
-        import('./dist/assets/index.js');
-      }
-    </script>
   </body>
 </html>
 
